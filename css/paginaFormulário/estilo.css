@@ -1,0 +1,63 @@
+@import url(-variaveis.css);
+
+body {
+    background-color: gray;
+}
+
+.logoPrincipal {
+    size: 20px;
+    display: flex;
+    justify-content: space-around;
+
+    background-color: black;
+}
+
+.logoDuvida {
+    display: flex;
+
+}
+
+
+.formularioPrincipal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 30%;
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+    border-color: blue;
+    border: 3px;
+}
+
+h2 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.formulario_cadastro {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(78, 78, 87);
+   
+}
+
+
+
+.formularioInput {
+    border-radius: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+
+.formulario_email {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+}
+
+.formulario {
+    border-radius: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: maroon;
+}
