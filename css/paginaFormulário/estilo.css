@@ -5,24 +5,31 @@ body {
 }
 
 .logoPrincipal {
-    size: 20px;
     display: flex;
     justify-content: space-around;
 
-    background-color: black;
 }
 
-.logoDuvida {
+#logo {
+    height: 55px;
+}
+
+#duvida {
+    height: 40px;
+}
+
+/*.logoDuvida {
     display: flex;
+   
 
-}
+}*/
 
 
 .formularioPrincipal {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
+    margin-left: 35%;
     width: 30%;
     background-color: black;
     padding: 20px;
@@ -60,4 +67,24 @@ h2 {
     border-radius: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: maroon;
+}
+
+.botaoEntrar {
+    
+    color: white;
+    text-align: center;
+    background-color: red;
+    padding: 10px;
+    border: 2px;
+    margin: 10px;
+    margin-left: 8%;
+    border-radius: 15px;
+    width: 25em;
+    
+}
+
+.botaoEntrar:hover {
+    background-color: rgb(82, 13, 13);
+    transition: 0.5s;
+    
 }
