@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,64 +17,95 @@
                 <a href="https://www.dicio.com.br/duvida/"><img id="duvida" src="css/img/duvida.png"></a>
         </div>
     </header>
-
+  
     <section class="formularioPrincipal">
 
         <div>
             <h2>Criando um usuário:</h2>
         </div>
-        <fieldset>
+        <form name="cadastro" method="post" action="form.php">
             <legend class="formulario" for="Nome-Completo">Nome Completo:</legend>
             <div class="formulario_nome">
-                <input type="text" class="formularioInput" placeholder="Digite aqui..."/>
+                <input type="text" class="formularioInput"\
+                title="Digite seu nome Completo"
+                 placeholder="Digite aqui..." required/>
             </div>
-        </fieldset>
-    
-        <fieldset>
+            
+        
+        
             <legend class="formulario" for="Email">Email:</legend>
             <div class="formulario_email">
-                <input type="text" class="formularioInput" placeholder="Digite aqui..."/>
+                <input type="email" class="formularioInput"\ title="Digite seu Email"\
+                 placeholder="Digite aqui..." required/>
                 
             </div>
-        </fieldset>
+        
 
-        <fieldset>
+        
             <legend class="formulario" for="CPF">CPF:</legend>
             <div class="formulario_cpf">
-                <input type="text" class="formularioInput" placeholder="Digite aqui..."/>
+                <input type="text" name="cpf" class="formularioInput" \
+                        pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" placeholder="Digite aqui..."\
+                        title="Digite um CPF no formato: xxx.xxx.xxx-xx"/>
                 
             </div>
-        </fieldset>
 
-        <fieldset>
             <legend class="formulario" for="RG">RG:</legend>
             <div class="formulario_RG">
-                <input type="text" class="formularioInput" placeholder="Digite aqui..."/>
+                <input type="text" class="formularioInput"\ pattern="\d{10}"\
+                 title="Digite seu RG"
+                placeholder="Digite aqui..."/>
             </div>
-        </fieldset>    
+            
 
-            <fieldset>
+            
                 <legend class="formulario" for="dataNascimento">Data de Nascimento:</legend>
                 <div class="formulario_Data_Nascimento">
-                    <input type="text" class="formularioInput" placeholder="Digite aqui..."/>
+                    <input type="date" class="formularioInput" \ pattern="\d{2}/\d{2}/d{4}"
+                    placeholder="Digite aqui..."/>
                 </div>
-            </fieldset>    
-   
-        <fieldset>
-            <legend class="formulario" for="Senha">Senha:</legend>
-            <div class="formulario_senha">
-                <input type="text" class="formularioInput" placeholder="Digite aqui..."/>
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <legend class="formulario" for="senhaNovamente">Repita a senha:</legend>
-            <div class="formulario_senha_novamente">
-                <input type="text" class="formularioInput" placeholder="Digite aqui..."/>
-            </div>
-        </fieldset>
-
-        <button class="botaoEntrar">Entrar</button>
+                
+            
+            
+                <legend class="formularioInput">Qual curso?</legend>
+                <select class="cursos">
+                    <option>Escolha o curso...</option>
+                    <option>ADMINISTRAÇÃO - LINHA DE FORMAÇÃO ADMINISTRAÇÃO DE EMPRESAS</option>
+                    <option>ADMINISTRAÇÃO - LINHA DE FORMAÇÃO INOVAÇÃO E EMPREENDEDORISMO </option>
+                  <option>ADMINISTRAÇÃO - LINHA DE FORMAÇÃO LIDERANÇA E GESTÃO DE PESSOAS</option>
+                  <option>ADMINISTRAÇÃO - LINHA DE FORMAÇÃO MARKETING</option>
+                  <option>ADMINISTRAÇÃO - LINHA DE FORMAÇÃO NEGÓCIOS INTERNACIONAIS</option>
+                  <option>ARQUITETURA E URBANISMO</option>
+                  <option>CIÊNCIA DA COMPUTAÇÃO</option>
+                  <option>CIÊNCIA DE DADOS E INTELIGÊNCIA ARTIFICIAL </option>
+                  <option>CIÊNCIAS CONTÁBEIS - LINHA DE FORMAÇÃO CONTROLADORIA E TRIBUTOS</option>
+                  <option>CIÊNCIAS ECONÔMICAS - LINHA DE FORMAÇÃO ECONOMIA</option>
+                  <option>CIÊNCIAS ECONÔMICAS - LINHA DE FORMAÇÃO FINANÇAS</option>
+                  <option>DESIGN - LINHA DE FORMAÇÃO DESIGN DE COMUNICAÇÃO</option>
+                  <option>DESIGN - LINHA DE FORMAÇÃO DESIGN DE PRODUTO</option>
+                  <option>DIREITO</option>
+                  <option>ENGENHARIA CIVIL</option>
+                  <option>ENGENHARIA DE COMPUTAÇÃO</option>
+                  <option>ENGENHARIA DE ENERGIAS RENOVÁVEIS</option>
+                  <option>ENGENHARIA DE PRODUÇÃO</option>
+                  <option>ENGENHARIA DE SOFTWARE</option>
+                  <option>ENGENHARIA MECÂNICA </option>
+                  <option>ENGENHARIA QUÍMICA</option>
+                  <option>ESCRITA CRIATIVA</option>
+                  <option>HISTÓRIA - BACHARELADO</option>
+                  <option>HISTÓRIA - LICENCIATURA</option>
+                  <option>JORNALISMO</option>
+                  <option>PSICOLOGIA</option>
+                  <option>PUBLICIDADE E PROPAGANDA</option>
+                  <option>SISTEMAS DE INFORMAÇÃO</option>
+                
+                </select> 
+              
+      
+        <a href="paginaLogin.html">
+        <input type="submit" class="botaoEntrar" value="Enviar">
+        </a>
+        </form>
 </section>
 
   </body>
